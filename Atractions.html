@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Atractions - Seoul</title>
+    <style>
+      .banner {
+        display: block;
+        margin: 0 auto;
+      }
+
+          nav {
+        width: 1000px;
+        margin: 10px auto 0 auto;
+        background-color: #333;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      nav a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+
+      .page-content {
+        width: 1000px;
+        margin: 30px auto;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+
+      .attraction-item {
+  margin-top: 20px;
+}
+
+.attraction-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.attraction-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.attraction-row img {
+  width: 450px;
+  height: auto;
+  display: block;
+}
+
+.attraction-info {
+  width: 520px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.attraction-info p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.fav-btn {
+  background-color: #b22222;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.fav-btn:hover {
+  background-color: #8b1a1a;
+}
+
+.fav-btn.saved {
+  background-color: #2e7d32;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Seoul</h1>
+    <img class="banner" src="title.jpg" width="1000" height="300" alt="Seoul">
+
+    <nav>
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Atractions.html">Atractions</a></li>
+    <li><a href="Restaurants.html">Restaurants</a></li>
+    <li><a href="Favorites.html">Favorites</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="page-content">
+      <h2>Palaces and Museums</h2>
+
+      <div class="attraction-item">
+  <h3>1. Changdeokgung Palace</h3>
+  <div class="attraction-row">
+    <img src="Palace and Museums/Changdeokgung Palace.jpg" alt="Changdeokgung Palace">
+    <div class="attraction-info">
+      <p>Changdeokgung is a former royal palace in Seoul, South Korea. A UNESCO World Heritage Site and a Historic Site of South Korea, it is among the best preserved of all Korean palaces. It and its neighboring palace Changgyeonggung have together been called the "East Palace". Changdeokgung was established in 1405.</p>
+      <p><strong>Address:</strong> 99 Yulgok-ro, Jongno District, Seoul, South Korea</p>
+      <p><strong>Phone:</strong> +82 2-3668-2300</p>
+      <p><strong>Hours:</strong><br>
+        Friday: 9 am–5:30 pm<br>
+        Saturday: 9 am–5:30 pm<br>
+        Sunday: 9 am–5:30 pm<br>
+        Monday: Closed<br>
+        Tuesday: 9 am–5:30 pm<br>
+        Wednesday: 9 am–5:30 pm<br>
+        Thursday: 9 am–5:30 pm
+        <button class="fav-btn" onclick="saveFavorite(this, 'Changdeokgung Palace', 'Palace and Museums/Changdeokgung Palace.jpg', '99 Yulgok-ro, Jongno District, Seoul, South Korea')">
+  Save to Favorites
+</button>
+      </p>
+    </div>
+  </div>
+</div>
+      <div class="attraction-item">
+        <h3>2. Gyeongbokgung Palace</h3>
+        <div class="attraction-row">
+          <img src="Palace and Museums/Gyeongbokgung Palace.jpg" alt="Gyeongbokgung Palace">
+          <div class="attraction-info">
+            <p>Gyeongbokgung Palace is a former royal palace in Seoul, South Korea. Established in 1395, it was the first royal palace of the Joseon dynasty, and is now one of the most significant tourist attractions in the country. The palace was among the first landmarks to be established in Seoul.</p>
+            <p><strong>Address:</strong> 161 Sajik-ro, Jongno District, Seoul, South Korea</p>
+            <p><strong>Phone:</strong> +82 2-3700-3900</p>
+            <p><strong>Opened:</strong> 1395 | <strong>Function:</strong> Palace</p>
+            <p><strong>Hours:</strong><br>
+              Friday: 9 am–6 pm<br>
+              Saturday: 9 am–6 pm<br>
+              Sunday: 9 am–6 pm<br>
+              Monday: 9 am–6 pm<br>
+              Tuesday: Closed<br>
+              Wednesday: 9 am–6 pm<br>
+              Thursday: 9 am–6 pm
+            </p>
+            <button class="fav-btn" onclick="saveFavorite(this, 'Gyeongbokgung Palace', 'Palace and Museums/Gyeongbokgung Palace.jpg', '161 Sajik-ro, Jongno District, Seoul, South Korea')">
+              Save to Favorites
+            </button>
+          </div>
+        </div>
+      </div>
+       <div class="attraction-item">
+        <h3>3. Jogyesa Temple</h3>
+        <div class="attraction-row">
+          <img src="Palace and Museums/Jogyesa Temple.jpg" alt="Jogyesa Temple">
+          <div class="attraction-info">
+            <p>Jogyesa Temple is the chief temple of the Jogye Order of Korean Buddhism. The building dates back to the late 14th century and became the order's chief temple in 1936. It thus plays a leading role in the current state of Seon Buddhism in South Korea.</p>
+            <p><strong>Address:</strong> 55 Ujeongguk-ro, Jongno District, Seoul, South Korea</p>
+            <p><strong>Phone:</strong> +82 2-768-8600</p>
+            <p><strong>Hours:</strong><br>
+              Friday: 4 am–11 pm<br>
+              Saturday: 4 am–11 pm<br>
+              Sunday: 4 am–11 pm<br>
+              Monday: 4 am–11 pm<br>
+              Tuesday: 4 am–11 pm<br>
+              Wednesday: 4 am–11 pm<br>
+              Thursday: 4 am–11 pm
+            </p>
+            <button class="fav-btn" onclick="saveFavorite(this, 'Jogyesa Temple', 'Palace and Museums/Jogyesa Temple.jpg', '55 Ujeongguk-ro, Jongno District, Seoul, South Korea')">
+              Save to Favorites
+            </button>
+          </div>
+        </div>
+      </div>
+        <div class="attraction-item">
+        <h3>4. National Museum of Korea</h3>
+        <div class="attraction-row">
+          <img src="Palace and Museums/National Museum of Korea.jpg" alt="National Museum of Korea">
+          <div class="attraction-info">
+            <p>The National Museum of Korea is the flagship museum of Korean history and art in South Korea. Since its establishment in 1945, the museum has been committed to various studies and research activities.</p>
+            <p><strong>Address:</strong> 137 Seobinggo-ro, Yongsan District, Seoul, South Korea</p>
+            <p><strong>Phone:</strong> +82 2-2077-9000</p>
+            <p><strong>Hours:</strong><br>
+              Friday: 9:30 am–5:30 pm<br>
+              Saturday: 9:30 am–9 pm<br>
+              Sunday: 9:30 am–5:30 pm<br>
+              Monday: 9:30 am–5:30 pm<br>
+              Tuesday: 9:30 am–5:30 pm<br>
+              Wednesday: 9:30 am–9 pm<br>
+              Thursday: 9:30 am–5:30 pm
+            </p>
+            <button class="fav-btn" onclick="saveFavorite(this, 'National Museum of Korea', 'Palace and Museums/National Museum of Korea.jpg', '137 Seobinggo-ro, Yongsan District, Seoul, South Korea')">
+              Save to Favorites
+            </button>
+          </div>
+        </div>
+      </div>
+       <div class="attraction-item">
+        <h3>5. Leeum Museum of Art</h3>
+        <div class="attraction-row">
+          <img src="Palace and Museums/Seoul Art Museum.jpg" alt="Leeum Museum of Art">
+          <div class="attraction-info">
+            <p>The Leeum Museum of Art is a museum in Hannam-dong, Yongsan District, Seoul, South Korea. It is run by the Samsung Foundation of Culture. It is considered one of South Korea's top three private art museums. The museum consists of two parts, one of which houses traditional Korean art, the other contemporary art.</p>
+            <p><strong>Address:</strong> 60-16 Itaewon-ro 55-gil, Yongsan District, Seoul, South Korea</p>
+            <p><strong>Phone:</strong> +82 2-2014-6901</p>
+            <p><strong>Hours:</strong><br>
+              Friday: 10 am–6 pm<br>
+              Saturday: 10 am–6 pm<br>
+              Sunday: 10 am–6 pm<br>
+              Monday: Closed<br>
+              Tuesday: 10 am–6 pm<br>
+              Wednesday: 10 am–6 pm<br>
+              Thursday: 10 am–6 pm
+            </p>
+            <button class="fav-btn" onclick="saveFavorite(this, 'Leeum Museum of Art', 'Palace and Museums/Seoul Art Museum.jpg', '60-16 Itaewon-ro 55-gil, Yongsan District, Seoul, South Korea')">
+              Save to Favorites
+            </button>
+          </div>
+        </div>
+      </div>
+            <div class="attraction-item">
+        <h3>6. The War Memorial of Korea</h3>
+        <div class="attraction-row">
+          <img src="Palace and Museums/The War Memorial of Korea.jpg" alt="The War Memorial of Korea">
+          <div class="attraction-info">
+            <p>The War Memorial of Korea is a museum located in Yongsan-dong, Yongsan-gu, Seoul, South Korea. It opened in 1994 on the former site of the army headquarters to exhibit and memorialize the military history of Korea.</p>
+            <p><strong>Address:</strong> 29 Itaewon-ro, Yongsan District, Seoul, South Korea</p>
+            <p><strong>Phone:</strong> +82 2-709-3114</p>
+            <p><strong>Hours:</strong><br>
+              Friday: 9:30 am–6 pm<br>
+              Saturday: 9:30 am–6 pm<br>
+              Sunday: 9:30 am–6 pm<br>
+              Monday: Closed<br>
+              Tuesday: 9:30 am–6 pm<br>
+              Wednesday: 9:30 am–6 pm<br>
+              Thursday: 9:30 am–6 pm
+            </p>
+            <button class="fav-btn" onclick="saveFavorite(this, 'The War Memorial of Korea', 'Palace and Museums/The War Memorial of Korea.jpg', '29 Itaewon-ro, Yongsan District, Seoul, South Korea')">
+              Save to Favorites
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <h3>7. Namsan Seoul Tower</h3>
+        <div class="attraction-row">
+          <img src="Palace and Museums/Namsan Seoul Tower.jpg" alt="Namsan Seoul Tower">
+          <div class="attraction-info">
+            <p>Namsan Seoul Tower, also known as the YTN Seoul Tower, Namsan Tower, Seoul Tower or N Seoul Tower, is a communication and observation tower located on the summit of Namsan in central Seoul, South Korea.</p>
+            <p><strong>Address:</strong> 105 Namsangongwon-gil, Yongsan District, Seoul, South Korea</p>
+            <p><strong>Phone:</strong> +82 2-3455-9277</p>
+            <p><strong>Hours:</strong><br>
+              Friday: 10 am–10:30 pm<br>
+              Saturday: 10 am–11 pm<br>
+              Sunday: 10 am–11 pm<br>
+              Monday: 10 am–10:30 pm<br>
+              Tuesday: 10 am–10:30 pm<br>
+              Wednesday: 10 am–10:30 pm<br>
+              Thursday: 10 am–10:30 pm
+            </p>
+            <button class="fav-btn" onclick="saveFavorite(this, 'Namsan Seoul Tower.jpg', 'Palace and Museums/Namsan Seoul Tower.jpg', '105 Namsangongwon-gil, Yongsan District, Seoul, South Korea')">
+              Save to Favorites
+            </button>
+          </div>
+        </div>
+      </div>
+          <div class="attraction-item">
+        <h3>8. Cheonggyecheon</h3>
+        <div class="attraction-row">
+          <img src="Palace and Museums/Cheonggyecheon Stream.jpg" alt="Cheonggyecheon Stream">
+          <div class="attraction-info">
+            <p>Cheonggyecheon is a 10.9-kilometre-long stream and public space in downtown Seoul, South Korea. A natural stream sourced from the Suseongdong Valley in Inwangsan.</p>
+            <p><strong>Highlights:</strong> Public toilet · Dogs allowed</p>
+            <p><strong>Address:</strong> Jongno District, Seoul, South Korea</p>
+            <p><strong>Phone:</strong> +82 2-2290-7111</p>
+            <p><strong>Hours:</strong><br>
+              Friday: Open 24 hours<br>
+              Saturday: Open 24 hours<br>
+              Sunday: Open 24 hours<br>
+              Monday: Open 24 hours<br>
+              Tuesday: Open 24 hours<br>
+              Wednesday: Open 24 hours<br>
+              Thursday: Open 24 hours
+            </p>
+            <button class="fav-btn" onclick="saveFavorite(this, 'Cheonggyecheon Stream', 'Palace and Museums/Cheonggyecheon Stream.jpg', 'Jongno District, Seoul, South Korea')">
+              Save to Favorites
+            </button>
+          </div>
+        </div>
+      </div>
+       <div class="attraction-item">
+        <h3>9. Bukchon Hanok Village</h3>
+        <div class="attraction-row">
+          <img src="Palace and Museums/Bukchon Hanok Village.jpg" alt="Bukchon Hanok Village">
+          <div class="attraction-info">
+            <p>Bukchon Hanok Village is a residential neighborhood in Jongno District, Seoul, South Korea. It has many restored traditional Korean houses, called hanok. This has made it a popular tourist destination. The area contains many hanok that date to the late 19th and early 20th centuries.</p>
+            <p><strong>Address:</strong> Gyedong-gil, Jongno District, Seoul, South Korea</p>
+            <p><strong>Phone:</strong> +82 2-2133-1371</p>
+            <p><strong>Hours:</strong><br>
+              Friday: 10 am–5 pm<br>
+              Saturday: 10 am–5 pm<br>
+              Sunday: 10 am–5 pm<br>
+              Monday: 10 am–5 pm<br>
+              Tuesday: 10 am–5 pm<br>
+              Wednesday: 10 am–5 pm<br>
+              Thursday: 10 am–5 pm
+            </p>
+            <button class="fav-btn" onclick="saveFavorite(this, 'Bukchon Hanok Village', 'Palace and Museums/Bukchon Hanok Village.jpg', 'Gyedong-gil, Jongno District, Seoul, South Korea')">
+              Save to Favorites
+            </button>
+          </div>
+        </div>
+      </div>
+       <div class="attraction-item">
+        <h3>10. Lotte World</h3>
+        <div class="attraction-row">
+          <img src="Palace and Museums/Lotte World.jpg" alt="Lotte World">
+          <div class="attraction-info">
+            <p>Lotte World or Lotte World Adventure is a theme park and major recreation complex in Seoul, South Korea.</p>
+            <p><strong>Service options:</strong> Arcade games · Restaurant</p>
+            <p><strong>Address:</strong> 240 Olympic-ro, Songpa District, Seoul, South Korea</p>
+            <p><strong>Phone:</strong> +82 1661-2000</p>
+            <p><strong>Hours:</strong><br>
+              Friday: 10 am–10 pm<br>
+              Saturday: 10 am–10 pm<br>
+              Sunday: 10 am–10 pm<br>
+              Monday: 10 am–10 pm<br>
+              Tuesday: 10 am–10 pm<br>
+              Wednesday: 10 am–10 pm<br>
+              Thursday: 10 am–9 pm
+            </p>
+            <button class="fav-btn" onclick="saveFavorite(this, 'Lotte World', 'Palace and Museums/Lotte World.jpg', '240 Olympic-ro, Songpa District, Seoul, South Korea')">
+              Save to Favorites
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <script>
+  function saveFavorite(button, name, image, address) {
+    let favorites = JSON.parse(localStorage.getItem('seoulFavorites')) || [];
+
+    const alreadySaved = favorites.some(item => item.name === name);
+    if (!alreadySaved) {
+      favorites.push({ name: name, image: image, address: address });
+      localStorage.setItem('seoulFavorites', JSON.stringify(favorites));
+    }
+
+    button.textContent = 'Saved to Favorites!';
+    button.classList.add('saved');
+  }
+</script>
+  </body>
+</html>
